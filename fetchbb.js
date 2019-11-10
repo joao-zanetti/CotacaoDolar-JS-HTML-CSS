@@ -1,3 +1,7 @@
+/*
+    Developed by João Zanetti
+    https://github.com/joao-zanetti
+*/
 var resultDisplay = document.querySelector('body');
 var dia= document.querySelector('#datadia');
 var mes= document.querySelector('#datames');
