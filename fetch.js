@@ -1,3 +1,7 @@
+/*
+    Developed by João Zanetti
+    https://github.com/joao-zanetti
+*/
 var cotacaoSel = document.querySelector('#tipocotacao');
 var mesiSel = document.querySelector('#mesi');
 var mesfSel = document.querySelector('#mesf');
