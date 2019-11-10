@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>CotacaoDolar</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylebb.css">
+</head>
+<body>
+  <h1>Cotação de Dólares por período</h1>
+  <form>
+      <label for="tipocotacao">Tipo de cotação</label>
+      <select id="tipocotacao" name="tipocotacao">
+        <option>Compra</option>
+        <option>Venda</option>
+      </select>
+    </form>
+    <form id="dataform">
+      <label for="datainicial">Inicio do Periodo:</label>
+      <input type="number" id="diai"  name="diai" min="1" max="31" required>
+      <select id="mesi" name="mesi">
+        <option value="01">janeiro</option>
+        <option value="02">fevereiro</option>
+        <option value="03">março</option>
+        <option value="04">abril</option>
+        <option value="05">maio</option>
+        <option value="06">junho</option>
+        <option value="07">julho</option>
+        <option value="08">agosto</option>
+        <option value="09">setembro</option>
+        <option value="10">outubro</option>
+        <option value="11">novembro</option>
+        <option value="12">dezembro</option>
+      </select>
+      <input type="number" id="anoi"  name="anoi" min="1900" max="2019" required>
+
+      <label for="datafinal">Fim do Periodo :</label>
+      <input type="number" id="diaf"  name="diaf" min="1" max="31" required>
+      <select id="mesf" name="mesf">
+        <option value="01">janeiro</option>
+        <option value="02">fevereiro</option>
+        <option value="03">março</option>
+        <option value="04">abril</option>
+        <option value="05">maio</option>
+        <option value="06">junho</option>
+        <option value="07">julho</option>
+        <option value="08">agosto</option>
+        <option value="09">setembro</option>
+        <option value="10">outubro</option>
+        <option value="11">novembro</option>
+        <option value="12">dezembro</option>
+      </select>
+      <input type="number" id="anof"  name="anof" min="1900" max="2019" required>
+      <input type="submit" value="submit">
+    </form>
+     <pre>
+
+    </pre>
+    <script src="fetch.js"></script>
+</body>
+</html>

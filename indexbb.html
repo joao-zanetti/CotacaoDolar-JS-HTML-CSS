@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>CotacaoDolar</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="stylebb.css">
+</head>
+<body>
+	<h1>Cotação de Dólares por data de 2018</h1>
+  <form id="dataform">
+      <label class="item" for="datadia">Dia da cotação:</label>
+      <input class="item" type="number" data-polyfill="all" id="datadia" name="datadia" required min="1" max="31" value="1">
+      <label class="item" for="datames">Mês da cotação:</label>
+      <input class="item" type="number" data-polyfill="all" id="datames" name="datames" required min="1" max="12" value="1">
+      <input class="item" type="submit" value="buscar">
+  </form>
+    <table id="tsoma">
+      <caption>SOMA DAS COTAÇÕES</caption>
+      <tr>
+        <td>Soma Valores das Cotações de Compra</td>
+        <td>Soma Valores das Cotações de Venda</td>
+      </tr>
+        <tr>
+        <td id="somaccompra" >0</td>
+        <td id="somacvenda" >0</td>
+      </tr>
+    </table>
+    <table id="tcotacoes">
+      <caption>COTAÇÕES</caption>
+      <tr>
+        <td>Valor de Compra</td>
+        <td>Valor de Venda</td>
+        <td>Data</td>
+        <td></td>
+      </tr>
+    </table>
+  <script src="fetchbb.js"></script>
+</body>
+</html>
